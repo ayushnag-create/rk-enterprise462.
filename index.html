@@ -324,6 +324,52 @@
       font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text);
     }
     .product-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+    /* ── SHOWCASE / GALLERY ── */
+    #showcase { background: var(--bg); }
+    .showcase-subsection { margin-bottom: 3rem; }
+    .showcase-subsection:last-child { margin-bottom: 0; }
+    .showcase-subheading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1.4rem;
+    }
+    .showcase-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface);
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+    .showcase-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(44,95,74,.08);
+    }
+    .showcase-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+      background: #eee;
+      transition: transform .3s ease;
+    }
+    .showcase-card:hover img { transform: scale(1.05); }
+    .showcase-card p {
+      padding: 0.9rem 1rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+    }
+
 
     /* ── WHY US ── */
     #why { background: var(--surface); }
@@ -679,9 +725,57 @@
         <p> We fulfill large-scale orders packaged in durable 30L drums for industrial needs.</p>
       </div>
     </div>
-     
+      </div>
+  </section>
+  <!-- GALLERY / SHOWCASE -->
+<section id="showcase">
+  <div class="section-label">Take a Look Around</div>
+  <h2>Our Catalog &amp; Inventory</h2>
+  <p class="section-intro">A glimpse of additional products we carry and the stock we keep ready, so institutions across Rajasthan are supplied without delay.</p>
+
+  <div class="showcase-subsection">
+    <h3 class="showcase-subheading">Additional Lab Products</h3>
+    <div class="showcase-grid">
+      <div class="showcase-card">
+        <img src="#" alt="Additional lab product 1">
+        <p>Product Showcase</p>
+      </div>
+      <div class="showcase-card">
+        <img src="#" alt="Additional lab product 2">
+        <p>Product Showcase</p>
+      </div>
+      <div class="showcase-card">
+        <img src="#" alt="Additional lab product 3">
+        <p>Product Showcase</p>
+      </div>
+      <div class="showcase-card">
+        <img src="#" alt="Additional lab product 4">
+        <p>Product Showcase</p>
+      </div>
     </div>
-  
+  </div>
+
+  <div class="showcase-subsection">
+    <h3 class="showcase-subheading">Inventory and Stock Storage</h3>
+    <div class="showcase-grid">
+      <div class="showcase-card">
+        <img src="#" alt="Inventory and stock storage 1">
+        <p>Stock in Hand</p>
+      </div>
+      <div class="showcase-card">
+        <img src="#" alt="Inventory and stock storage 2">
+        <p>Stock in Hand</p>
+      </div>
+      <div class="showcase-card">
+        <img src="#" alt="Inventory and stock storage 3">
+        <p>Stock in Hand</p>
+      </div>
+      <div class="showcase-card">
+        <img src="#" alt="Inventory and stock storage 4">
+        <p>Stock in Hand</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- WHY US -->
